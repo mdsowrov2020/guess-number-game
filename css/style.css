@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #82d0fc;
+  background-color: rgb(73, 73, 73);
   height: 100vh;
   /* background: url(../images/num.jpg); */
   background-position: center;
@@ -70,7 +70,7 @@ body {
   border-radius: 35px !important;
   padding: 10px;
   margin-bottom: 15px;
-  border: 2px solid rgba(100, 100, 111, 0.4) !important;
+  border: 2px solid springgreen !important;
 }
 
 .buttons button {
@@ -108,7 +108,7 @@ body {
 
   .buttons button {
     display: inline-block;
-    padding: 8px 25px !important;
+    padding: 10px 25px !important;
   }
   .history {
     margin: 30px auto;
@@ -121,6 +121,6 @@ body {
     width: 90%;
   }
   .input input {
-    height: 36px !important;
+    height: 40px !important;
   }
 }
