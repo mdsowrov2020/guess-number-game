@@ -13,12 +13,13 @@ document.querySelector('.guessNum').addEventListener('click', function () {
   if (!inpVal) {
     document.querySelector('.decision').textContent = 'No Number';
   } else if (inpVal === secretNumber) {
-    document.querySelector('.decision').textContent = 'Correct Number';
+    document.querySelector('.decision').textContent = 'Correct Number!!';
     document.querySelector('.numVal').textContent = secretNumber;
     document.querySelector('.number').style.cssText =
       'background-color: #fff; width: 100px; border-radius: 50%; transition: all .6s linear';
 
     document.querySelector('.bg').style.cssText = 'background: #42F079 ';
+    document.querySelector('.topHeading').textContent = 'Correct Number!!';
 
     if (score > highscore) {
       highscore = score;
@@ -56,5 +57,6 @@ document.querySelector('.reset').addEventListener('click', function () {
   document.querySelector('.number').style.cssText =
     'background-color: rgba(250, 250, 250, 0.9); width: 25%; transition: all .6s linear';
   document.querySelector('.numVal').textContent = '?';
-  document.querySelector('.bg').style.background = 'rgb(73, 73, 73)';
+  document.querySelector('.bg').style.background = '#F57A1A';
+  document.querySelector('.topHeading').textContent = 'Guess my number..';
 });
